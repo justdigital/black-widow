@@ -5,6 +5,9 @@
 		<style>
 			body, html {
 				font-family: helvetica, arial;
+				margin: 0;
+				padding: 80px;
+				background-color: #eee;
 			}
 			p {
 				line-height: 1;
@@ -14,29 +17,73 @@
 			h3 {
 				padding: 2px;
 				margin: 6px 0;
+				text-transform: uppercase;
+			}
+			.examples {
+				max-width: 960px;
+				margin: auto;
+				font-size: 0;
+				text-align: center;
+			}
+			.block {
+				display: inline-block;
+				vertical-align: top;
+				width: 50%;
+				font-size: 22px;
+				font-weight: bold;
+			}
+			.text-example, .text {
+				background-color: #fff;
+				margin: auto;
+				height: 58px;
+				width: 440px;
+				margin-bottom: 20px;
+				text-align: left;
+				padding: 12px;
+				border-radius: 4px;
+				color: #333;
+			}
+			.text-example p {
+				line-height: 26px;
+			}
+			.text {
+				white-space: nowrap;
 			}
 		</style>
 	</head>
 	<body>
-		<h3>Antes:</h3>
-		<div class="text-example" style="width: 280px; border: 1px solid red">
-			<p style="white-space: nowrap;">The quick brown fox jumps over the lazy dog</p>
-		</div>
-		<div class="text-example" style="width: 280px; border: 1px solid red">
-			<p style="white-space: nowrap;">Brick quiz whangs jumpy veldt fox!</p>
-		</div>
-		<div class="text-example" style="width: 280px; border: 1px solid red">
-			<p style="white-space: nowrap;">Verbatim reports were quickly given by Jim Fox to his amazed audience.</p>
-		</div>
-		<h3>Depois:</h3>
-		<div class="text" style="width: 280px; border: 1px solid red">
-			<p style="white-space: nowrap;">The quick brown fox jumps over the lazy dog</p>
-		</div>
-		<div class="text" style="width: 280px; border: 1px solid red">
-			<p style="white-space: nowrap;">Brick quiz whangs jumpy veldt fox!</p>
-		</div>
-		<div class="text" style="width: 280px; border: 1px solid red">
-			<p style="white-space: nowrap;">Verbatim reports were quickly given by Jim Fox to his amazed audience.</p>
+		<div class="examples">
+			<div class="block">
+				<h3>Antes</h3>
+				<div class="text-example">
+					<p>The quick brown fox jumps over the lazy dog</p>
+				</div>
+				<div class="text-example">
+					<p>Brick quiz whangs jumpy veldt fox!</p>
+				</div>
+				<div class="text-example">
+					<p>Verbatim reports were quickly given by Jim Fox to his amazed audience.</p>
+				</div>
+				<div class="text-example">
+					<p>Five big quacking zephyrs jolt my wax bed.</p>
+				</div>
+			</div>
+			
+			<div class="block">
+				<h3>Depois</h3>
+				<div class="text">
+					<p>The quick brown fox jumps over the lazy dog</p>
+				</div>
+				<div class="text">
+					<p>Brick quiz whangs jumpy veldt fox!</p>
+				</div>
+				<div class="text">
+					<p>Verbatim reports were quickly given by Jim Fox to his amazed audience.</p>
+				</div>
+				<div class="text">
+					<p>Five big quacking zephyrs jolt my wax bed.</p>
+				</div>
+			</div>
 		</div>
 	</body>
 	<script src="widow.js"></script>
