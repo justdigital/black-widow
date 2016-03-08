@@ -9,16 +9,14 @@ var Widow = {
 		var parentElements = document.getElementsByClassName(this.defaultClass);
 		var parentsArr = [];
 
-		for (p in parentElements) {
+		for (var p = 0; p < parentElements.length; p++) {
 			var el = parentElements[p];
-			if (typeof el === 'object') {
-				var children = el.querySelectorAll(this.defaultElement);
-				var parentObj = {
-					el: el,
-					children: children
-				};
-				parentsArr.push(parentObj);
-			}
+			var children = el.querySelectorAll(this.defaultElement);
+			var parentObj = {
+				el: el,
+				children: children
+			};
+			parentsArr.push(parentObj);
 		}
 
 		return parentsArr;
