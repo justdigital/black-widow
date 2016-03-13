@@ -7,10 +7,9 @@ var Widow = {
 
 	getParents: function () {
 		var parentElements = document.getElementsByClassName(this.defaultClass);
-		var parentElmLength = parentElements.length;
 		var parentsArr = [];
 
-		for (var p = 0; p < parentElmLength; p++) {
+		for (var p = 0; p < parentElements.length; p++) {
 			var el = parentElements[p];
 			var children = el.querySelectorAll(this.defaultElement);
 			var parentObj = {
@@ -45,7 +44,7 @@ var Widow = {
 				var newWords2 = '';
 
 
-				for (var i = 0; i < wordsLength; i++) {
+				for (var i = 0; i < words.length; i++) {
 					if (i < count) {
 						// Preenche a primeira linha com a metade da array de palavras
 						newWords1 += words[i] + ' ';
