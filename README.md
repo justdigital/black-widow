@@ -27,7 +27,7 @@ WidowJS will make your broken texts never leave a word alone on the last line, s
 
 Include this to your pages:
 ```
-  <script type="text/javascript" src="widow.js"></script>
+<script type="text/javascript" src="widow.js"></script>
 ```
 Call widow's init script:
 ```
