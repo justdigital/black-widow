@@ -26,16 +26,16 @@ WidowJS will make your broken texts never leave a word alone on the last line, s
 ## How to use
 
 Include this to your pages:
-```
+```html
 <script type="text/javascript" src="widow.js"></script>
 ```
 Call widow's init script:
-```
+```javascript
 Widow.init(); 
 ```
 
 If you want to change some options before initializing:
-```
+```javascript
 // Values in this example are the default ones
 Widow.defaultClass = "text";  // The class of the container where the paragraphs will be found
 Widow.defaultElement = "p";   // The elements inside the containers that will be parsed and broken
