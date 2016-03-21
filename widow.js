@@ -74,7 +74,3 @@ var Widow = {
 		this.parseParents(parentList);
 	}
 };
-
-(function() {
-	Widow.init();
-})();
